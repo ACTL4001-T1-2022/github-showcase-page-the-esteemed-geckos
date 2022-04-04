@@ -18,6 +18,17 @@ create positive economic opportunities. A team is defined as competitive by Comm
 ## Team Selection
 
 
+
+Below is the function that was used to scale all the statistics to between 0 and 1.
+```{r}
+standardise <- function (column) {
+  result <- (column - min(column))/(max(column) - min(column))
+  return(result)
+}
+```
+
+
+
 ---
 
 ## Rarita's National Team
@@ -42,6 +53,33 @@ create positive economic opportunities. A team is defined as competitive by Comm
 
 
 
+
+| Age | <= 24 | 24 - 27 | 27 - 32 | 32 - 35 | 35 <= |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Chance to Increase/Decrease Value | 90% chance to increase by 0% - 10% |  75% chance to increase by 0% - 10% | 100% chance to stay the same | 75% chanceto decrease by 0% - 10% | 90% chance to decrease by 0% - 10% |
+
+Below is the function that was used to change each players skill each year.
+```{r}
+playerStat <- function(Born,Stat,Year) {
+  ifelse((Year - Born) <= 24,Stat*(1 + ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1)),
+         ifelse((Year - Born) <= 27,Stat*(1 + ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
+                ifelse((Year - Born) <= 32, Stat,
+                       ifelse((Year - Born) <= 35, Stat*(1 - ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
+                              Stat*(1 - ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1))))))
+}
+```
+>ifelse() had to be used instead of if and else statements so that the function could be applied in a pipeline.
+
+
+
+
+
+
+
+
+
+
+
 ### Congrats on completing the [2022 SOA Research Challenge](https://www.soa.org/research/opportunities/2022-student-research-case-study-challenge/)!
 
 >Now it's time to build your own website to showcase your work.  
@@ -59,9 +97,3 @@ This is written in markdown language.
 More information on GitHub Pages can be found [here](https://pages.github.com/)
 ![](Actuarial.gif)
 
-
-
-```{r}
-test
-
-```
