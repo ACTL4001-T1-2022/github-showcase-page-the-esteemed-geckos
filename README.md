@@ -1,7 +1,13 @@
-# Actuarial Theory and Practice A
-
-# The Esteemed Geckos
+# **2022 Student Research Case Study Challenge: Rarita Football Team**
+---
+## The Esteemed Geckos :shipit:
 ![](esteemedgecko.gif)
+
+---
+
+## Objective Overview
+
+
 
 _"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benjamin Franklin_
 
