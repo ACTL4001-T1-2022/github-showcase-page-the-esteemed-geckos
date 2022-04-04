@@ -1,7 +1,7 @@
-**2022 Student Research Case Study Challenge: Rarita Football Team**
-====
+# **2022 Student Research Case Study Challenge: Rarita Football Team**
+---
 
-## The Esteemed Geckos :shipit:
+## **The Esteemed Geckos :shipit:**
 ![](esteemedgecko.gif)
 
 ---
