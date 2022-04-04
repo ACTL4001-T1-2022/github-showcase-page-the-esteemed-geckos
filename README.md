@@ -20,3 +20,10 @@ This is written in markdown language.
 
 More information on GitHub Pages can be found [here](https://pages.github.com/)
 ![](Actuarial.gif)
+
+
+
+```{r}
+test
+
+```
