@@ -2,10 +2,12 @@
 ---
 
 ## **The Esteemed Geckos :shipit:**
-![](esteemedgecko.gif)
-
+<p align="center">
+ <img src="esteemedgecko.gif">
+</p>
 
 >Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
+
 ---
 
 ## Objective Overview
