@@ -424,9 +424,27 @@ This section aims to implement a strategy that creates a competitive football te
 
 Phase 1 involves selecting the team per skill and budgeting considerations. As aforementioned in the Team Selection, the forecasted probability of placing in the top ten starts high. However, the chance of winning the championship begins low and increases rapidly over several years. This is achieved through a combination of young and prime-aged players, allowing for short-term success and a long-term championship. The selected players are below in Table 9.
 
-INSERT TABLE OF PLAYERS
+|**Name** | **Year of Birth** | **Position** | **2022-2026 Salary (∂)** | **2027-2031 Salary (∂)** |
+| :---: | :---: | :---: | :---: | :---: |
+| C. Tukamushaba | 1995 | Defender | 970 000 | 1 082 580 |
+| E. Mudzingwa | 1994 | Forward | 16 240 000 | 18 124 848 |
+| F. Ajio | 1991 | Forward | 1 990 000 | 2 309 802 |
+| F. Akumu |2000 | Goalkeeper | 5 600 000 | 6 624 944 |
+| F. Chin | 1997 | Midfield | 1 340 000 | 1 555 344 |
+| F. Ithungu | 1992 | Goalkeeper | 1 530 000 | 1 741 726 |
+| F. Yunusa | 1994 | Defender | 18 150 000 | 20 256 527 |
+| H. Makumbi | 1993 | Forward | 7 430 000 | 8 458 188 |
+| H. Zare | 1991 | Defender | 15 430 000 | 17 909 671 |
+| N. Terzi | 1998 | Defender | 5 000 000 | 5 803 523 | 
+| O. Wanjala | 1996 | Midfield | 1 750 000 | 1 992 171 |
+| Q. bin Ismail | 1996 | Defender | 920 000 | 1 047 313 |
+| S. Barman | 1995 | Midfield | 8 680 000 | 9 687 419 |
+| X. Leroy | 1994 | Midfield | 5 630 000 | 6 283 429 |
+| X. Thomas | 1991 | Forward | 1 680 000 | 1 949 984 | 
 
 The players will be offered five-year contracts with a chance to be renewed at the end of 2026. Upon retention, the player will receive a higher inflation-adjusted salary and a bonus based on performance. Without additional data, an estimated team selection in five years is unlikely to be realistic and forecasts were completed with the original 15 players. 
+
+INSERT CODING
 
 As mentioned in the Economic Impact, the team has budgeted to maintain positive net profits throughout the ten-year plan. The revenues forecasted are driven by various sources such as matchday ticket sales. Broadcasting revenues are forecasted to increase as the international reputation of the league benefits from a competitive team. Commercial revenues will also increase from higher merchandise sales and new sponsorships. GDP is expected to increase as the team becomes competitive. Annual forecasts may be found in the previous section.
 
