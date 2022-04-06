@@ -19,6 +19,15 @@ create positive economic opportunities. A team is defined as competitive by Comm
 
 ---
 
+## **Data and Data Cleaning**
+
+The data used was provided by SOA. Three data sets were used:
+- [Economy Data](2022-student-research-case-study-economic-data.xlsx)
+- [Football Data](2022-student-research-case-study-football-soccer-data.xlsx)
+- [Player Data](2022-student-research-case-study-player-data.xlsx)
+
+---
+
 ## **Team Selection**
 
 
