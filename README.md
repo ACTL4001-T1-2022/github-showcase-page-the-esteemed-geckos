@@ -1,12 +1,11 @@
 # **SOA Case Study: Rarita Football Team Showcase**
 ---
-
-## **The Esteemed Geckos :shipit:**
 <p align="center">
- <img src="esteemedgecko.gif">
+ <img src="Esteemed_Gecko_logo.gif">
+ <img width=340 src="esteemedgecko.gif">
 </p>
 
->Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
+By: Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 
 ---
 
