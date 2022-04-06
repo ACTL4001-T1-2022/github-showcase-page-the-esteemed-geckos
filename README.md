@@ -416,6 +416,24 @@ Direct Team Revenues
 | 2030 | 215 184 865 |
 | 2031 | 231 128 688 |
 
+## **Implementation Plan**
+
+This section aims to implement a strategy that creates a competitive football team to reap the benefits of an internationally successful team. This report’s key objectives necessitates a medium-term strategy, meaning success will need to be achieved in the short and long term. The implementation timeline is broken down into three phases, as seen below.
+
+![](implementationtimeline.png)
+
+Phase 1 involves selecting the team per skill and budgeting considerations. As aforementioned in the Team Selection, the forecasted probability of placing in the top ten starts high. However, the chance of winning the championship begins low and increases rapidly over several years. This is achieved through a combination of young and prime-aged players, allowing for short-term success and a long-term championship. The selected players are below in Table 9.
+
+INSERT TABLE OF PLAYERS
+
+The players will be offered five-year contracts with a chance to be renewed at the end of 2026. Upon retention, the player will receive a higher inflation-adjusted salary and a bonus based on performance. Without additional data, an estimated team selection in five years is unlikely to be realistic and forecasts were completed with the original 15 players. 
+
+As mentioned in the Economic Impact, the team has budgeted to maintain positive net profits throughout the ten-year plan. The revenues forecasted are driven by various sources such as matchday ticket sales. Broadcasting revenues are forecasted to increase as the international reputation of the league benefits from a competitive team. Commercial revenues will also increase from higher merchandise sales and new sponsorships. GDP is expected to increase as the team becomes competitive. Annual forecasts may be found in the previous section.
+
+The implementation and monitoring of the short-term plan will be the focus of Phase 2. Players will undergo rigorous training and development programs. These programs will develop the team’s skills, strategy and culture. The minimum requirement is placing top ten in the championship. Progress will further be monitored annually through three metrics. Forecasted tournament rank, net profits and GDP will be compared with actual data. If progress is underwhelming, revaluations of the team and strategy will be considered.
+
+After the second phase, there will be a five-year re-evaluation to adapt the plan to changing player and financial performances. This involves renewing contracts and potentially selecting new players. The final phase covers the last five years where a championship is the target. Phase 3 will continue to implement development programs and focus on maintaining current success and pushing for the championship.
+
 
 THIS IS A TEST
 
