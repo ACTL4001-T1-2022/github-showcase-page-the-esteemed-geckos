@@ -47,6 +47,7 @@ The cleaning applied and the limitations of these datasets are listed below:
 * **Tournament Data Missing 2020 Values** <br /> The absence of 2020 data for tournament passing and goalkeeping meant the probability models were trained solely through 2021. This resulted in a slightly weaker analysis as the data size was reduced.
 * **Tournament, League, Revenue and Expense Data NA Values** <br /> This investigation dealt with NA values by omitting them from the analysis. This resulted in data loss however was mitigated by selecting relevant columns first. This enabled the investigations to omit fewer values.
 * **Tournament and League Data Negative Values** <br /> The data contained negative values which had meaningless real-life interpretations. As these values represented a significant portion of the total dataset, they were adjusted. The adjustment involved scaling the values between a range of 0 to 1 to provide a parameter based on relative performance. Below is the function used to perform the adjustment on each statistic.
+
 ```{r}
 standardise <- function (column) {
   result <- (column - min(column))/(max(column) - min(column))
