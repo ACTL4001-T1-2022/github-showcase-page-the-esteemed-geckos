@@ -9,6 +9,12 @@ By: Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 
 ---
 
+## **Table of Contents**
+1. [Objective Overview](https://github.com/ACTL4001-T1-2022/github-showcase-page-the-esteemed-geckos#objective-overview)
+
+
+---
+
 ## **Objective Overview**
 
 The objective of this study is to create a competitive national football team for Rarita to build a brand and
