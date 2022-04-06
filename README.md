@@ -328,7 +328,7 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 
 | Age | <= 24 | 24 - 27 | 27 - 32 | 32 - 35 | 35 <= |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Chance to Increase/Decrease Value | 90% chance to **increase** by 0% - 10% |  75% chance to **increase** by 0% - 10% | 100% chance to stay the same | 75% chance to **decrease** by 0% - 10% | 90% chance to **decrease** by 0% - 10% |
+| Chance to Increase or Decrease Value | 90% chance to **increase** by 0% - 10% |  75% chance to **increase** by 0% - 10% | 100% chance to stay the same | 75% chance to **decrease** by 0% - 10% | 90% chance to **decrease** by 0% - 10% |
 
 Below is the function that was used to change each players skill each year.
 ```{r}
