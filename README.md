@@ -65,7 +65,7 @@ A combination of different statistics between shooting, passing, defense and goa
 
 <table>
 <tr><th> Goalkeepers </th><th> Defenders </th></tr>
-<tr><td>
+<tr><td><table></table>
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
@@ -98,7 +98,7 @@ A combination of different statistics between shooting, passing, defense and goa
  
 <table>
 <tr><th> Midfielders </th><th> Forwards </th></tr>
-<tr><td>
+<tr><td><table></table>
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
