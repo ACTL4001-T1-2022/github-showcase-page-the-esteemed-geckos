@@ -63,9 +63,8 @@ These attributes were chosen through exploring the correlation between each stat
 
 A combination of different statistics between shooting, passing, defense and goalkeeping were chosen as independent variables based on both correlation and importance for each role. They are shown below along with their correlation to rank.
 
-<table>
-<tr><th> Goalkeepers </th><th> Defenders </th></tr>
-<tr><td><table></table>
+
+#### Goalkeepers
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
@@ -79,7 +78,7 @@ A combination of different statistics between shooting, passing, defense and goa
 | Penalty Kicks PKsv | 0.37 |
 | Penalty Kicks Save% | 0.28 |
 
-</td><td>
+#### Defenders
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
@@ -94,11 +93,7 @@ A combination of different statistics between shooting, passing, defense and goa
 | 1/3 | -0.29 |
 | Prog | -0.18 |
 
-</td></tr> </table>
- 
-<table>
-<tr><th> Midfielders </th><th> Forwards </th></tr>
-<tr><td><table></table>
+#### Midfielders 
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
@@ -113,7 +108,7 @@ A combination of different statistics between shooting, passing, defense and goa
 | Total PrgDist | -0.20 |
 | Blocks Pass | -0.13 |
 
-</td><td>
+#### Forwards
 
 | Predictors | Correlation With Rank |
 | :---: | :---: |
@@ -128,7 +123,6 @@ A combination of different statistics between shooting, passing, defense and goa
 | Expected xG | -0.13 |
 | Gls | -0.10 |
 
-</td></tr> </table> 
  
 ### Modelling Player Selection
 
