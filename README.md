@@ -207,7 +207,7 @@ gk_KNN_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_knn)
 ```
 
 ### Bagging
-For the bagging model, 5000 trees were used and as there were 9 variables the number of splits was chosen as 9.
+For the bagging model, 5000 trees were used and as there were 9 predictors the value of `mtry` is 9.
 ```{r}
 set.seed(1)
 bagGK <- randomForest(Performance_Saves ~ ., data = goalkeeperTraining, subset = GKtrain, mtry = 9, ntree = 5000, importance = TRUE)
@@ -217,12 +217,12 @@ gk_bag_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_bg)
 ```
 
 ### Random Forest
-For the random forest model, 5000 trees were used and the number of splits chosen was based on the lowest out-of-bag error.
+For the random forest model, 5000 trees were used and the number of predictors chosen was based on the lowest out-of-bag error.
 ```{r}
 set.seed(1)
 tuneRF(goalkeeperTraining[GKtrain,-4], goalkeeperTraining$Performance_Saves[GKtrain], stepFactor = 0.9, ntree=5000)
 ```
-The number of splits was chosen as 8 as this gave the lowest OOB.
+The number of predictors was chosen as 8 as this gave the lowest OOB. Thus, the value of `mtry` is 8.
 ```{r}
 rfGK <- randomForest(Performance_Saves ~ ., data = goalkeeperTraining, subset = GKtrain, mtry = 8, ntree = 5000, importance = TRUE)
 yhat_rf <- predict(rfGK, newdata = goalkeeperTraining[-GKtrain,], n.trees = 5000)
@@ -303,7 +303,7 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 
 ## **Probability of Competitiveness**
 
-The 2021 FSA tournament data and rankings were used to train a bagging model with 5000 trees to forecast the probabilities of the team becoming competitive within the next 10 years. A team average for each of the 4 variables, Saves%, Pressure%, Completion% and Goals was used to train the model. Two separate bagging models were trained, one whose output was the teams rank (Rank Model) and the other a probability of the team ranking top 10 in the next season (TT Model). Below represents the Rank Model and TT Model which utilised a combined and transformed 2021 tournament dataset. Both bagging models utilised 5000 trees. 
+The 2021 FSA tournament data and rankings were used to train a bagging model with 5000 trees to forecast the probabilities of the team becoming competitive within the next 10 years. A team average for each of the 4 variables, Saves%, Pressure%, Completion% and Goals was used to train the model. Two separate bagging models were trained, one whose output was the teams rank (Rank Model) and the other a probability of the team ranking top 10 in the next season (TT Model). Below represents the Rank Model and TT Model which utilised a combined and transformed 2021 tournament dataset. 
 ```{r}
 #Rank Model
 bagprob <- randomForest((Rank)~.,data=modelData,mtry=4,ntree=5000,importance=TRUE)
@@ -311,6 +311,7 @@ bagprob <- randomForest((Rank)~.,data=modelData,mtry=4,ntree=5000,importance=TRU
 #TT Model
 bagprobTT <- randomForest(factor(Rank)~.,data=modelDataTT,mtry=4,ntree=5000,importance=TRUE)
 ```
+> Both bagging models utilised 5000 trees and 4 predictors. 
 
 To account for changes in player skill from age and experience, each player in the 2021 FSA tournament and the selected Raritan team was exposed to a scaled increase/decrease in their Saves%, Pressure%, Completion% or Goals based on their age each year. For certain age ranges, a player has a chance to either increase or decrease their score by a value between 0-10%. A uniform distribution was used to determine whether their value increased or decreased and the percentage their value would change by. This effectively allows the teams to change in skill each year. The table below showcases the age ranges, the probabilities of their value changing and the percentage change.
 
@@ -329,7 +330,10 @@ playerStat <- function(Born,Stat,Year) {
                               Stat*(1 - ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1))))))
 }
 ```
-Simulations were then run to determine, the ranking of the teams over the next 10 years. Below is an example of 1 simulation for the performance of the teams in the next 10 years.
+
+>`ifelse` had to be used instead of `if` and `else` statements so that the function could be applied in a pipeline.
+
+Simulations were then run to determine, the ranking of the teams over the next 10 years. Below is an example of 1 simulation for the performance of the teams in the next 10 years. Here Rarita ranks 3rd in 2022.
 
 ![](teammovement.png)
 
@@ -377,7 +381,6 @@ As the selected Raritan team is forecasted to have a high chance of ranking top 
 
 
 
->`ifelse()` had to be used instead of `if` and `else` statements so that the function could be applied in a pipeline.
 
 
 
