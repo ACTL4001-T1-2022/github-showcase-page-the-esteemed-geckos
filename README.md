@@ -10,7 +10,7 @@
 
 ---
 
-## Objective Overview
+## **Objective Overview**
 
 The objective of this study is to create a competitive national football team for Rarita to build a brand and
 create positive economic opportunities. A team is defined as competitive by Commissioner Bayes if they:
@@ -19,7 +19,7 @@ create positive economic opportunities. A team is defined as competitive by Comm
 
 ---
 
-## Team Selection
+## **Team Selection**
 
 
 
@@ -36,7 +36,7 @@ standardise <- function (column) {
 ---
 
 ## Rarita's National Team
-| **Name** | **Year of Birth** | **Position** |
+| Name | Year of Birth | Position |
 | :---: | :---: | :---: |
 | C. Tukamushaba | 1995 | Defender | 
 | E. Mudzingwa  | 1994 | Forward |
@@ -54,8 +54,7 @@ standardise <- function (column) {
 | X. Leroy | 1994 | Midfield |
 | X. Thomas | 1991 | Forward |
 
-
-Testing
+---
 
 
 | Age | <= 24 | 24 - 27 | 27 - 32 | 32 - 35 | 35 <= |
