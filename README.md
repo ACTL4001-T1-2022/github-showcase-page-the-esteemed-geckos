@@ -448,7 +448,7 @@ Phase 1 involves selecting the team per skill and budgeting considerations. As a
 
 The players will be offered five-year contracts with a chance to be renewed at the end of 2026. Upon retention, the player will receive a higher inflation-adjusted salary and a bonus based on performance. Without additional data, an estimated team selection in five years is unlikely to be realistic and forecasts were completed with the original 15 players. 
 
-To simulate the performance bonus, two for loops were required. The aforementioned _playerStat_ function was simulated throughout the 10 years. The total number of performance increases were then counted and multiplied to a flat 2% bonus. This was performed for a variety of timeframes to conduct sensitivity analysis.
+To simulate the performance bonus, two for loops were required. The aforementioned `playerStat` function was simulated throughout the 10 years. The total number of performance increases were then counted and multiplied to a flat 2% bonus. This was performed for a variety of timeframes to conduct sensitivity analysis.
 
 ```{r}
 for (i in 2023:2031) {
