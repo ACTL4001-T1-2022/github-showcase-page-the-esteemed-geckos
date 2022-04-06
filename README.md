@@ -4,6 +4,8 @@
 ## **The Esteemed Geckos :shipit:**
 ![](esteemedgecko.gif)
 
+
+>Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 ---
 
 ## Objective Overview
