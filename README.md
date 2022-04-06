@@ -416,6 +416,8 @@ Direct Team Revenues
 | 2030 | 215 184 865 |
 | 2031 | 231 128 688 |
 
+---
+
 ## **Implementation Plan**
 
 This section aims to implement a strategy that creates a competitive football team to reap the benefits of an internationally successful team. This report’s key objectives necessitates a medium-term strategy, meaning success will need to be achieved in the short and long term. The implementation timeline is broken down into three phases, as seen below.
@@ -445,6 +447,18 @@ Phase 1 involves selecting the team per skill and budgeting considerations. As a
 The players will be offered five-year contracts with a chance to be renewed at the end of 2026. Upon retention, the player will receive a higher inflation-adjusted salary and a bonus based on performance. Without additional data, an estimated team selection in five years is unlikely to be realistic and forecasts were completed with the original 15 players. 
 
 INSERT CODING
+
+```{r}
+for (i in 2023:2031) {
+  playerSalaryBonus <- playerSalaryBonus %>%
+    mutate_(.dots = setNames(list(paste0("playerStat(Born,`", i - 1,"`,", i,")")), i))
+}
+
+for (i in 2022:2030){
+  playerSalaryBonus<-playerSalaryBonus%>%
+    mutate_(.dots=setNames(list(paste0("ifelse(`",i+1,"`/","`",i,"`>1,1,0)")),i))
+}
+```
 
 As mentioned in the Economic Impact, the team has budgeted to maintain positive net profits throughout the ten-year plan. The revenues forecasted are driven by various sources such as matchday ticket sales. Broadcasting revenues are forecasted to increase as the international reputation of the league benefits from a competitive team. Commercial revenues will also increase from higher merchandise sales and new sponsorships. GDP is expected to increase as the team becomes competitive. Annual forecasts may be found in the previous section.
 
