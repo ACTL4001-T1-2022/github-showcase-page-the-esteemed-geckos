@@ -307,6 +307,26 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 
 > The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for forwards.
 
+## Rarita's National Team
+
+| **Name** | **Year of Birth** | **Position** |
+| :---: | :---: | :---: |
+| C. Tukamushaba | 1995 | Defender | 
+| E. Mudzingwa  | 1994 | Forward |
+| F. Ajio | 1991 | Forward |
+| F. Akumu | 2000 | Goalkeeper |
+| F. Chin | 1997 | Midfield |
+| F. Ithungu | 1992 | Goalkeeper |
+| F. Yunusa | 1994 | Defender |
+| H. Makumbi | 1993 | Forward |
+| H. Zare | 1991 | Defender |
+| N. Terzi | 1998 | Defender |
+| O. Wanjala | 1996 | Midfield |
+| Q. bin Ismail | 1996 | Defender |
+| S. Barman | 1995 | Midfield |
+| X. Leroy | 1994 | Midfield |
+| X. Thomas | 1991 | Forward |
+
 ---
 
 ## **Probability of Competitiveness**
@@ -363,25 +383,7 @@ As the selected Raritan team is forecasted to have a high chance of ranking top 
 
 ---
 
-## Rarita's National Team
 
-| **Name** | **Year of Birth** | **Position** |
-| :---: | :---: | :---: |
-| C. Tukamushaba | 1995 | Defender | 
-| E. Mudzingwa  | 1994 | Forward |
-| F. Ajio | 1991 | Forward |
-| F. Akumu | 2000 | Goalkeeper |
-| F. Chin | 1997 | Midfield |
-| F. Ithungu | 1992 | Goalkeeper |
-| F. Yunusa | 1994 | Defender |
-| H. Makumbi | 1993 | Forward |
-| H. Zare | 1991 | Defender |
-| N. Terzi | 1998 | Defender |
-| O. Wanjala | 1996 | Midfield |
-| Q. bin Ismail | 1996 | Defender |
-| S. Barman | 1995 | Midfield |
-| X. Leroy | 1994 | Midfield |
-| X. Thomas | 1991 | Forward |
 
 ---
 
@@ -424,7 +426,7 @@ This section aims to implement a strategy that creates a competitive football te
 
 ![](implementationtimeline.png)
 
-Phase 1 involves selecting the team per skill and budgeting considerations. As aforementioned in the Team Selection, the forecasted probability of placing in the top ten starts high. However, the chance of winning the championship begins low and increases rapidly over several years. This is achieved through a combination of young and prime-aged players, allowing for short-term success and a long-term championship. The selected players are below in the Table.
+Phase 1 involves selecting the team per skill and budgeting considerations. As aforementioned in the Team Selection, the forecasted probability of placing in the top ten starts high. However, the chance of winning the championship begins low and increases rapidly over several years. This is achieved through a combination of young and prime-aged players, allowing for short-term success and a long-term championship. The selected players are in the table below.
 
 |**Name** | **Year of Birth** | **Position** | **2022-2026 Salary (∂)** | **2027-2031 Salary (∂)** |
 | :---: | :---: | :---: | :---: | :---: |
@@ -492,37 +494,6 @@ The implementation and monitoring of the short-term plan will be the focus of Ph
 After the second phase, there will be a five-year re-evaluation to adapt the plan to changing player and financial performances. This involves renewing contracts and potentially selecting new players. The final phase covers the last five years where a championship is the target. Phase 3 will continue to implement development programs and focus on maintaining current success and pushing for the championship.
 
 ---
-
-## **Assumptions**
-
-### **Key Assumptions**
-
-**1. The best players now will be the best players in the next ten years.**
-
-   This allows us to select the players that the model deems best given the available data. 
-  
-**2. All teams in the FSA tournament remain the same including Rarita, no players get replaced.**
-
-   We assume that all the teams remain the same following the next ten years due to the ambiguity of many factors that may occur over the next ten years (e.g new players coming in and being selected, current players may become injured, current players may retire).
-  
-**3. Each player in Rarita has a 5 year contract which increases with performance.**
-
-   The rationale for this assumption is that salary increases should be tied in with performance and that players are trying to sign longer term contracts.
-  
-**4. Each player in Rarita has a 5 year contract which increases with performance.**
-
-   By scaling the statistics to between 0 and 1, it allows the players to be ranked against each other on a relative scale with more meaningful interpretations.
-
-### **Other Assumptions**
-
-- Population, GDP, GNI and spot rate forecasts follow an ARIMA model.
-- Revenue, expense and inflation forecasts follow an ETS model.
-- Team synergy doesn’t affect their playing ability.
-- Each player is offered a 5 year contract.
-- A player's age affects their playing ability.
-- A competitive national football team will increase the GDP.
-
-THIS IS A TEST
 
 
 
