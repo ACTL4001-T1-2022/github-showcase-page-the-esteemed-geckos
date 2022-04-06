@@ -299,6 +299,54 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 
 > The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for forwards.
 
+---
+
+## **Probability of Competitiveness**
+
+The 2021 FSA tournament data and rankings were used to train a bagging model with 5000 trees to forecast the probabilities of the team becoming competitive within the next 10 years. A team average for each of the 4 variables, Saves%, Pressure%, Completion% and Goals was used to train the model. Two separate bagging models were trained, one whose output was the teams rank (Rank Model) and the other a probability of the team ranking top 10 in the next season (TT Model). Below represents the Rank Model and TT Model which utilised a combined and transformed 2021 tournament dataset. Both bagging models utilised 5000 trees. 
+```{r}
+#Rank Model
+bagprob <- randomForest((Rank)~.,data=modelData,mtry=4,ntree=5000,importance=TRUE)
+
+#TT Model
+bagprobTT <- randomForest(factor(Rank)~.,data=modelDataTT,mtry=4,ntree=5000,importance=TRUE)
+```
+
+To account for changes in player skill from age and experience, each player in the 2021 FSA tournament and the selected Raritan team was exposed to a scaled increase/decrease in their Saves%, Pressure%, Completion% or Goals based on their age each year. For certain age ranges, a player has a chance to either increase or decrease their score by a value between 0-10%. A uniform distribution was used to determine whether their value increased or decreased and the percentage their value would change by. This effectively allows the teams to change in skill each year. The table below showcases the age ranges, the probabilities of their value changing and the percentage change.
+
+| Age | <= 24 | 24 - 27 | 27 - 32 | 32 - 35 | 35 <= |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Chance to Increase or Decrease Value | 90% chance to **increase** by 0% - 10% |  75% chance to **increase** by 0% - 10% | 100% chance to stay the same | 75% chance to **decrease** by 0% - 10% | 90% chance to **decrease** by 0% - 10% |
+
+Below is the function that was used the rules in the table above to change each players skill each year.
+
+```{r}
+playerStat <- function(Born,Stat,Year) {
+  ifelse((Year - Born) <= 24,Stat*(1 + ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1)),
+         ifelse((Year - Born) <= 27,Stat*(1 + ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
+                ifelse((Year - Born) <= 32, Stat,
+                       ifelse((Year - Born) <= 35, Stat*(1 - ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
+                              Stat*(1 - ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1))))))
+}
+```
+Simulations were then run to determine, the ranking of the teams over the next 10 years. Below is an example of 1 simulation for the performance of the teams in the next 10 years.
+
+![](teammovement.png)
+
+Using the forecasts from the TT Model, 5000 simulations were averaged to determine the probability of the Raritan football team ranking at least top 10 in the next 5 years. The results are summarised in the table below.
+
+| Year | 2022 | 2023 | 2024 | 2025 | 2026 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Average Probability of Top 10** | 0.8729 | 0.8827 | 0.8834 | 0.8832 | 0.8816 |
+| **Probability Range** | 0.8384 - 0.9048 | 0.8384 - 0.9048 | 0.8384 - 0.9048 | 0.8210 - 0.9112 | 0.7474 - 0.9130 |
+
+Using the forecasts from the Rank Model, 5000 simulations were run to determine the probability of the Raritan team ranking 1st in the FSA tournament in the next 10 years. The results are summarised in the table below.
+
+| Year | 2022 | 2023 | 2024 | 2025 | 2026 | 2027 | 2028 | 2029 | 2030 | 2031 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Probability of Placing 1st** | 0.2048 | 0.4910 | 0.6206 | 0.7042 | 0.8008 | 0.8928 | 0.9462 | 0.9768 | 0.9882 | 0.9884 |
+
+As the selected Raritan team is forecasted to have a high chance of ranking top 10 in the next 5 years and high chance of claiming a FSA championship in the next 10 years, the selected team can be considered competitive. 
 
 
 ---
@@ -326,20 +374,9 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 ---
 
 
-| Age | <= 24 | 24 - 27 | 27 - 32 | 32 - 35 | 35 <= |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| Chance to Increase or Decrease Value | 90% chance to **increase** by 0% - 10% |  75% chance to **increase** by 0% - 10% | 100% chance to stay the same | 75% chance to **decrease** by 0% - 10% | 90% chance to **decrease** by 0% - 10% |
 
-Below is the function that was used to change each players skill each year.
-```{r}
-playerStat <- function(Born,Stat,Year) {
-  ifelse((Year - Born) <= 24,Stat*(1 + ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1)),
-         ifelse((Year - Born) <= 27,Stat*(1 + ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
-                ifelse((Year - Born) <= 32, Stat,
-                       ifelse((Year - Born) <= 35, Stat*(1 - ifelse(runif(1) <= 0.75, runif(1)*0.1, -runif(1)*0.1)),
-                              Stat*(1 - ifelse(runif(1) <= 0.9, runif(1)*0.1, -runif(1)*0.1))))))
-}
-```
+
+
 >`ifelse()` had to be used instead of `if` and `else` statements so that the function could be applied in a pipeline.
 
 
