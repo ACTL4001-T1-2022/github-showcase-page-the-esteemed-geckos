@@ -263,6 +263,7 @@ gkPred <- predict(knnGK, newdata = goalkeeperRarita[,-5])
 From the predicted values, the top 2 goalkeepers were chosen. This process was repeated for the defenders, midfielders and forwards. The MSE and R^2 of the models for each of the other positions are shown below.
 
 #### Defenders
+
 | **Model** | **MSE** | **R Square** |
 | :---: | :---: | :---: |
 | Multi-linear Regression | 0.005752477 | 0.11062766 |
@@ -274,6 +275,7 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 > The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for defenders.
 
 #### Midfielders
+
 | **Model** | **MSE** | **R Square** |
 | :---: | :---: | :---: |
 | Multi-linear Regression | 0.00005803288 | 0.9914495 | 
@@ -285,6 +287,7 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 > The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for midfielders.
 
 #### Forwards
+
 | **Model** | **MSE** | **R Square** |
 | :---: | :---: | :---: |
 | Multi-linear Regression | 0.0008249397 | 0.4811610 |
