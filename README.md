@@ -498,16 +498,16 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 ### **Key Assumptions**
 
 1. **The best players now will be the best players in the next ten years**
-This allows us to select the players that the model deems best given the available data. 
+   This allows us to select the players that the model deems best given the available data. 
 
 2. **All teams in the FSA tournament remain the same including Rarita, no players get replaced**
-We assume that all the teams remain the same following the next ten years due to the ambiguity of many factors that may occur over the next ten years (e.g new players coming in and being selected, current players may become injured, current players may retire).
+   We assume that all the teams remain the same following the next ten years due to the ambiguity of many factors that may occur over the next ten years (e.g new players coming in and being selected, current players may become injured, current players may retire).
 
 3. **Each player in Rarita has a 5 year contract which increases with performance**
-The rationale for this assumption is that salary increases should be tied in with performance and that players are trying to sign longer term contracts.
+   The rationale for this assumption is that salary increases should be tied in with performance and that players are trying to sign longer term contracts.
 
 4. **Negative statistics were treated as correct and the statistics were scaled between 0 and 1**
-By scaling the statistics to between 0 and 1, it allows the players to be ranked against each other on a relative scale with more meaningful interpretations.
+   By scaling the statistics to between 0 and 1, it allows the players to be ranked against each other on a relative scale with more meaningful interpretations.
 
 ### **Other Assumptions**
 
