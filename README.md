@@ -173,7 +173,7 @@ goalkeeperRarita <- goalkeeperTotal %>%
 goalkeeperRaritaName <- na.omit(rbind(leagueGoalkeep, playTournGoalkeep)) %>%
   filter(Nation == 'Rarita' & Year == 2021)
 ```
-From these datasets we can build the different models.
+From these datasets we can build the different models. Below is the code and parameter selection for each of the models.
 
 
 ### Multi-Linear Regression
@@ -204,7 +204,6 @@ yhat_knn<- predict(knnGK,goalkeeperTraining[-GKtrain,-4])
 gk_KNN_MSE <- mean((yhat_knn - goalkeeperTraining$Performance_Saves[-GKtrain])^2)
 gk_KNN_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_knn)
 ```
-
 
 ### Bagging
 For the bagging model, 5000 trees were used and as there were 9 variables the number of splits was chosen as 9.
@@ -261,9 +260,7 @@ As the KNN model has the lowest MSE and highest R^2, the KNN model was chosen as
 ```{r}
 gkPred <- predict(knnGK, newdata = goalkeeperRarita[,-5])
 ```
-From the predicted values, the top 2 goalkeepers were chosen. 
-
-This process was repeated for the defenders, midfielders and forwards. The MSE and R^2 of the models for each of the other positions are shown below.
+From the predicted values, the top 2 goalkeepers were chosen. This process was repeated for the defenders, midfielders and forwards. The MSE and R^2 of the models for each of the other positions are shown below.
 
 #### Defenders
 | **Model** | **MSE** | **R Square** |
@@ -273,7 +270,8 @@ This process was repeated for the defenders, midfielders and forwards. The MSE a
 | Bagging | 0.006335879 | 0.07147108 |
 | Random Forest | 0.005986248 | 0.09114180 |
 | Boosting | 0.006331765 | 0.11040315 |
-The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for defenders.
+
+> The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for defenders.
 
 #### Midfielders
 | **Model** | **MSE** | **R Square** |
@@ -283,7 +281,8 @@ The multi-linear regression model had the lowest MSE and the highest R^2 and was
 | Bagging | 0.00008030216 | 0.9879938 |
 | Random Forest | 0.00008036564 | 0.9879725 |
 | Boosting | 0.00013228586 | 0.9805513 |
-The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for midfielders.
+
+> The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for midfielders.
 
 #### Forwards
 | **Model** | **MSE** | **R Square** |
@@ -293,7 +292,8 @@ The multi-linear regression model had the lowest MSE and the highest R^2 and was
 | Bagging | 0.0009745583 | 0.4216689 |
 | Random Forest | 0.0009426277 | 0.4284739 |
 | Boosting | 0.0013975958 | 0.1560272 |
-The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for forwards.
+
+> The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for forwards.
 
 
 
