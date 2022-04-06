@@ -36,7 +36,8 @@ standardise <- function (column) {
 ---
 
 ## Rarita's National Team
-| Name | Year of Birth | Position |
+
+| **Name** | **Year of Birth** | **Position** |
 | :---: | :---: | :---: |
 | C. Tukamushaba | 1995 | Defender | 
 | E. Mudzingwa  | 1994 | Forward |
