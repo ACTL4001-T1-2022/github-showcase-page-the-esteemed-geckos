@@ -54,6 +54,8 @@ standardise <- function (column) {
 }
 ```
 * **Limited Historic Data** <br /> The limited years of data for economic and player data limited the accuracy of models. This was specifically prevalent for social media where only a single year was provided.
+
+
 ---
 
 ## **Team Selection**
@@ -383,12 +385,35 @@ As the selected Raritan team is forecasted to have a high chance of ranking top 
 ---
 
 
+Salary payments per year
 
+| Year | Salary (∂) |
+| :---: | :---: |
+| 2022 | 92 340 000 |
+| 2023 | 92 340 000 |
+| 2024 | 92 340 000 |
+| 2025 | 92 340 000 |
+| 2026 | 92 340 000 |
+| 2027 | 104 827 470 |
+| 2028 | 104 827 470 |
+| 2029 | 104 827 470 | 
+| 2030 | 104 827 470 |
+| 2031 | 104 827 470 |
 
+Direct Team Revenues
 
-
-
-
+| Year | Revenue (∂) |
+| :---: | :---: |
+| 2022 | 84 340 456 |
+| 2023 | 100 238 462 |
+| 2024 | 116 267 196 |
+| 2025 | 132 426 656 |
+| 2026 | 148 716 844 |
+| 2027 | 165 137 758 |
+| 2028 | 181 689 400 |
+| 2029 | 198 371 769 |
+| 2030 | 215 184 865 |
+| 2031 | 231 128 688 |
 
 
 THIS IS A TEST
