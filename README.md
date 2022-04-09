@@ -592,6 +592,8 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 - Negative statistics were treated as correct and the statistics were scaled between 0 and 1
 
+### Other Assumptions
+
 - Population, GDP, GNI and spot rate forecasts follow an ARIMA model.
 
 - Revenue, expense and inflation forecasts follow an ETS model.
@@ -607,7 +609,13 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 
 ---
+## **Risk and Risk Mitigation Considerations**
 
+### Sensitivity Analysis on Key Assumptions
+![](sensitivity.jpg)
+
+
+---
 ## **References**
 
 Aquino, R, Vieira, L, Carling, C, Martins, G, Alves, I & Puggina, E 2017, ‘Effects of competitive standard,
