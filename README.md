@@ -524,9 +524,14 @@ Francis Online 2021
 ## **Thank you!!**
 
 <p align="center">
- <img width=250 src="dribble.gif">
- <img width=250 src="hooray.gif">
- <img width=250 src="dribble.gif">
+ <img width=150 src="dribble.gif">
+ <img width=200 src="dribble.gif">
+ <img width=200 src="hooray.gif">
+ <img width=200 src="dribble.gif">
+ <img width=150 src="dribble.gif">
 </p>
+
+---
+
 
 
