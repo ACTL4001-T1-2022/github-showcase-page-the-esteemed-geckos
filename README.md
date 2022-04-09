@@ -500,7 +500,7 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 ---
 
-## References
+## **References**
 
 Aquino, R, Vieira, L, Carling, C, Martins, G, Alves, I & Puggina, E 2017, ‘Effects of competitive standard,
 team formation and playing position on match running performance of Brazil professional soccer
@@ -521,9 +521,12 @@ Francis Online 2021
 
 ---
 
-## Thank you!!
+## **Thank you!!**
 
-![](dribble.gif)
-![](hooray.gif)
-![](dribble.gif)
+<p align="center">
+ <img width=250 src="dribble.gif">
+ <img width=250 src="hooray.gif">
+ <img width=250 src="dribble.gif">
+</p>
+
 
