@@ -498,21 +498,32 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 
 
-
-### Congrats on completing the [2022 SOA Research Challenge](https://www.soa.org/research/opportunities/2022-student-research-case-study-challenge/)!
-
->Now it's time to build your own website to showcase your work.  
->To create a website on GitHub Pages to showcase your work is very easy.
-
-This is written in markdown language. 
->
-* Click [4001 link](https://classroom.github.com/a/ggiq0YzO) to accept your group assignment.
-* Click [5100 link](https://classroom.github.com/a/uVytCqDv) to accept your group assignment 
-
-#### Follow the [guide doc](Doc1.pdf) to submit your work. 
 ---
->Be creative! Feel free to link to embed your [data](player_data_salaries_2020.csv), [code](sample-data-clean.ipynb), [image](ACC.png) here
 
-More information on GitHub Pages can be found [here](https://pages.github.com/)
-![](Actuarial.gif)
+## References
+
+Aquino, R, Vieira, L, Carling, C, Martins, G, Alves, I & Puggina, E 2017, ‘Effects of competitive standard,
+team formation and playing position on match running performance of Brazil professional soccer
+players’, _International Journal of Performance Analysis in Sport_, accessed 14 March 2022 from Taylor &
+Francis Online 2021
+
+Carmichael, F, Rossi, G & Simmons, R 2011, ‘Contract duration and player performance in Serie A’,
+accessed 14 March 2022,
+<https://www.sheffield.ac.uk/polopoly_fs/1.679571!/file/F3_1_Simmons.pdf>
+
+Leena, R, Kettunen, J, Kujala, U and Heinonen, A 2012, ‘Sport injuries as the main cause of sport career
+termination among Finnish top-level athletes’, _European Journal of Sport Science_, accessed 14 March
+2022 from ResearchGate database
+
+Mujika, I, Vaeyens, R, Matthys, S, Santisteban, J, Goiriena, J & Philippaerts, R 2009, ‘The relative age effect
+in professional football club setting’, _Journal of Sports Sciences_, accessed 14 March 2022 from Taylor &
+Francis Online 2021
+
+---
+
+## Thank you!!
+
+![](dribble.gif)
+![](hooray.gif)
+![](dribble.gif)
 
