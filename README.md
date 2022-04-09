@@ -579,7 +579,7 @@ The implementation and monitoring of the short-term plan will be the focus of Ph
 After the second phase, there will be a five-year re-evaluation to adapt the plan to changing player and financial performances. This involves renewing contracts and potentially selecting new players. The final phase covers the last five years where a championship is the target. Phase 3 will continue to implement development programs and focus on maintaining current success and pushing for the championship.
 
 ---
-```
+
 ## **Assumptions**
 
 #Key Assumptions 
