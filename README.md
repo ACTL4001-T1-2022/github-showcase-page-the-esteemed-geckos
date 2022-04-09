@@ -466,9 +466,9 @@ rbind(ecoRarGDP%>%select(Year,Rarita),cbind(Year = c(2021:2030),Rarita = GNIc)) 
 ```
 Given the historical data doesn't account for the existence of the national team, the additional profit calculated above was added to GDP and GNI forecasts to capture the effect of the team on these economic indices. These forecasts can be seen below and highlight the positive impact of the proposed implementation plan on the economy.
 
-![](GDP Forecast.png)
+![](GDPforecast.png)
 
-![](GNI Forecast.png)
+![](GNIforecast.png)
 
 The above additional profit calculations however do not account for the initial one time sum of 995,000,000 or player salaries. Over the next 10 years, the players are signed to long-term 5 year contracts in which their salaries will increase based on their performance during those years as long-term contracts can improve player productivity (Carmichael, F 2011). As all players are chosen from Rarita, there is no need to borrow players from other countries, resulting in less expenses. The combined yearly salary to fund the players can be found in the table below, and as the total salary across the 10 years is far less than the ∂995,000,000 provided by the government, there is no need for non-government funding.
 
