@@ -307,7 +307,7 @@ From the predicted values, the top 2 goalkeepers were chosen. This process was r
 
 > The multi-linear regression model had the lowest MSE and the highest R^2 and was chosen as the best model for forwards.
 
-## Rarita's National Team
+## **Rarita's National Team**
 
 | **Name** | **Year of Birth** | **Position** |
 | :---: | :---: | :---: |
