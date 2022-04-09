@@ -185,7 +185,7 @@ goalkeeperRaritaName <- na.omit(rbind(leagueGoalkeep, playTournGoalkeep)) %>%
 From these datasets we can build the different models. Below is the code and parameter selection for each of the models.
 
 
-### Multi-Linear Regression
+#### Multi-Linear Regression
 ```{r}
 linearGK <- glm(Performance_Saves ~ ., data = goalkeeperTraining, subset = GKtrain, family = 'gaussian')
 summary(linearGK)
@@ -194,7 +194,7 @@ gk_LR_MSE <- mean((yhat_lr - goalkeeperTraining$Performance_Saves[-GKtrain])^2)
 gk_LR_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_lr)
 ```
 
-### K-Nearest Neighbours
+#### K-Nearest Neighbours
 
 First, the optimal value of K must be chosen based on the lowest error.
 ```{r}
@@ -224,7 +224,7 @@ gk_bag_MSE <- mean((yhat_bg - goalkeeperTraining$Performance_Saves[-GKtrain])^2)
 gk_bag_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_bg)
 ```
 
-### Random Forest
+#### Random Forest
 For the random forest model, 5000 trees were used and the number of predictors chosen was based on the lowest out-of-bag error.
 ```{r}
 set.seed(1)
@@ -238,7 +238,7 @@ gk_RF_MSE <- mean((yhat_rf - goalkeeperTraining$Performance_Saves[-GKtrain])^2)
 gk_RF_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_rf)
 ```
 
-### Boosting
+#### Boosting
 The number of trees utilised for the boosting model was choosen to give the smallest cross-validation error. This resulted in 1000 trees.
 ```{r}
 boostGK <- gbm(Performance_Saves ~ ., data = goalkeeperTraining[GKtrain,], distribution = "gaussian", n.trees = 1000, interaction.depth = 5, cv.folds = 10)
