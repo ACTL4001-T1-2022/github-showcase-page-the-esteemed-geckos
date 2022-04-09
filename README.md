@@ -632,7 +632,7 @@ sum(playerSalary3[2:11])
 ```
 ### Risk Analysis
 
-![](unknown.png)
+![](Capture.JPG)
 
 
 ---
