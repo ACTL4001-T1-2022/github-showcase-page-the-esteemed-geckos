@@ -419,7 +419,72 @@ Direct Team Revenues
 | 2031 | 231 128 688 |
 
 ---
+## **Economic Impact**
 
+For this analysis the chosen team is assumed to satisfy the "competitive" definition over the next 10 years. Forecasts of GDP, GNI and relevant league revenues/expenses have been provided, allowing an assessment of the team's impact on the Raritan economy.
+
+Additional revenue can be found in the above table Direct Team Revenues, and additional expenses are shown below. Expenses are expected to increase in later years as the team becomes more competitive and more money is invested into staff and training facilities.
+
+Direct Team Expenses
+
+| Year | Expenses (∂) |
+| :---: | :---: |
+| 2022 | 71 577 826 |
+| 2023 | 77 591 022 |
+| 2024 | 83 652 798 |
+| 2025 | 89 762 615 |
+| 2026 | 95 920 473 |
+| 2027 | 102 126 372 |
+| 2028 | 108 380 311 |
+| 2029 | 114 682 291 |
+| 2030 | 121 032 312 |
+| 2031 | 127 430 373 |
+
+Rarita's historical football league data was used to forecast revenues and expenses, producing two ETS models with and without the team. These models can be seen below:
+
+PUT R CODE HERE
+
+The difference between revenue minus expesnes in these two models represents additional profit resulting from the national team, shown in the table below alongside total profits for each year. This data shows that in the later years of the forecast the additional profit accounts for up to 15% of total football profit, indicating a significant financial benefit as a result of continued international success.
+
+Additional Profit from National Team
+
+| Year | Total Profit (∂) | Additional Profit (∂) | % of Total |
+| :---: | :---: | :---: | :---: |
+| 2022 | 427 465 532 | 12 763 170 | 2.99% |
+| 2023 | 453 516 194 | 22 647 440 | 4.99% |
+| 2024 | 479 770 791 | 32 614 397 | 7.00% |
+| 2025 | 506 229 323 | 42 664 041 | 8.43% |
+| 2026 | 532 891 789 | 52 796 370 | 9.91% |
+| 2027 | 559 758 191 | 63 011 386 | 11.26% |
+| 2028 | 586 828 528 | 73 309 089 | 12.49% |
+| 2029 | 614 102 800 | 83 689 478 | 13.63% |
+| 2030 | 641 581 007 | 94 152 553 | 14.68% |
+| 2031 | 669 293 149 | 104 698 314 | 15.64% |
+
+ARIMA models were produced using historical data for both GDP and GNI and forecasts for 2021-2031 were produced. Given the historical data doesn't account for the existence of the national team, the additional profit calculated above was added to GDP and GNI to capture the effect of the team on these economic indices. These forecasts can be seen below and highlight the positive impact of the proposed implementation plan on the economy.
+
+PUT GNI AND GDP PICTURES HERE
+
+The above additional profit calculations don't account for the initial one time sum of 995,000,000 or player salaries. To account for these factors, each year player salaries were subtracted from additional profit and the net result was taken from the remaining funding available. This remaining funding was then invested at the forecasted 1 year spot rate for the given year to determine the remaining funding in the following year. The Remaining Funding below showcases these results and highlights in the increase in remaining funds seen in 2031, a positive indicator for subsequent years.
+
+Remaining Funding
+
+| Year | Remaining Funding (∂) |
+| :---: | :---: |
+| 2022 | 919 888 128 |
+| 2023 | 861 621 841 |
+| 2024 | 812 680 079 |
+| 2025 | 773 264 941 |
+| 2026 | 743 588 341 |
+| 2027 | 711 209 738 |
+| 2028 | 688 831 694 |
+| 2029 | 676 672 796 |
+| 2030 | 674 954 169 |
+| 2031 | 683 900 010 |
+
+As stated by Rarita, the success of the international team increases global visibility, allowing for increased investment and tourism opportunities. Furthermore, the prize awarded to the FSA champion and the increase in league attendance resulting from the team's success are factors that were unable to be included in the additional profit calculation, however these factors are expected to have a positive impact on overall football profit. In regard to the impact of international success on the Raritan provinces, the increase in GDP shown in the figures above indicates the Raritan government would have additional funding that could be invested into the relatively poorer province of West Rarita.
+
+---
 ## **Implementation Plan**
 
 This section aims to implement a strategy that creates a competitive football team to reap the benefits of an internationally successful team. This report’s key objectives necessitates a medium-term strategy, meaning success will need to be achieved in the short and long term. The implementation timeline is broken down into three phases, as seen below.
