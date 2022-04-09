@@ -132,7 +132,7 @@ A combination of different statistics between shooting, passing, defense and goa
 | Gls | -0.10 |
 
  
-### Modelling Player Selection
+### **Modelling Player Selection**
 
 Multi-linear regression, K-nearest neighbours, bagging, random forest and boosting were the models chosen to model the players. A combination of the FSA tournament and league data was utilised to test and train the models. For each role, the model with the lowest mean squared error and highest R squared was used to predict the Raritan players' performance. The players were then ranked and the top players were chosen for the team. The players chosen were under age 30 in 2021 and their salaries were also considered to ensure economic viability.
 
@@ -214,7 +214,7 @@ gk_KNN_MSE <- mean((yhat_knn - goalkeeperTraining$Performance_Saves[-GKtrain])^2
 gk_KNN_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_knn)
 ```
 
-### Bagging
+#### Bagging
 For the bagging model, 5000 trees were used and as there were 9 predictors the value of `mtry` is 9.
 ```{r}
 set.seed(1)
@@ -248,7 +248,7 @@ gk_boost_MSE <- mean((yhat_boost - goalkeeperTraining$Performance_Saves[-GKtrain
 gk_boost_R <- RSquare(goalkeeperTraining$Performance_Saves[-GKtrain],yhat_boost)
 ```
 
-### Choosing the Model
+### **Choosing the Model**
 From these models, we have also calculated the MSE and R^2. The R^2 was calculated as below,
 ```{r}
 RSquare <- function(y_actual,y_predict){
