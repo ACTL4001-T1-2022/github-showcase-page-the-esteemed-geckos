@@ -487,8 +487,6 @@ The above additional profit calculations however do not account for the initial 
 
 To account for the initial sum and player salaries, each year player salaries were subtracted from additional profit and the net result was taken from the remaining funding available. This remaining funding was then invested at the forecasted 1 year spot rate for the given year to determine the remaining funding in the following year. The Remaining Funding below showcases these results and highlights in the increase in remaining funds seen in 2031, a positive indicator for subsequent years.
 
-Remaining Funding
-
 | Year | Remaining Funding (∂) |
 | :---: | :---: |
 | 2022 | 919 888 128 |
