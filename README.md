@@ -612,7 +612,8 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 ## **Risk and Risk Mitigation Considerations**
 
 ### Sensitivity Analysis on Key Assumptions
-![](sensitivity.jpg)
+
+![](sensitivity.JPG)
 
 
 ---
