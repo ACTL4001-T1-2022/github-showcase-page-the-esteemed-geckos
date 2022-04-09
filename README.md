@@ -579,7 +579,30 @@ The implementation and monitoring of the short-term plan will be the focus of Ph
 After the second phase, there will be a five-year re-evaluation to adapt the plan to changing player and financial performances. This involves renewing contracts and potentially selecting new players. The final phase covers the last five years where a championship is the target. Phase 3 will continue to implement development programs and focus on maintaining current success and pushing for the championship.
 
 ---
+```
+## **Assumptions**
 
+#Key Assumptions 
+
+- The best players now will be the best players in the next ten years
+
+- All teams in the FSA tournament remain the same including Rarita, no players get replaced
+
+- Each player in Rarita has a 5 year contract which increases with performance
+
+- Negative statistics were treated as correct and the statistics were scaled between 0 and 1
+
+- Population, GDP, GNI and spot rate forecasts follow an ARIMA model.
+
+- Revenue, expense and inflation forecasts follow an ETS model.
+
+- Team synergy doesn’t affect their playing ability.
+
+- Each player is offered a 5 year contract.
+
+- A player's age affects their playing ability.
+
+- A competitive national football team will increase the GDP.
 
 
 
