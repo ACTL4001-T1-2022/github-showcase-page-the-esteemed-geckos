@@ -382,44 +382,6 @@ Using the forecasts from the Rank Model, 5000 simulations were run to determine 
 
 As the selected Raritan team is forecasted to have a high chance of ranking top 10 in the next 5 years and high chance of claiming a FSA championship in the next 10 years, the selected team can be considered competitive. 
 
-
----
-
-
-
----
-
-
-Salary payments per year
-
-| Year | Salary (∂) |
-| :---: | :---: |
-| 2022 | 92 340 000 |
-| 2023 | 92 340 000 |
-| 2024 | 92 340 000 |
-| 2025 | 92 340 000 |
-| 2026 | 92 340 000 |
-| 2027 | 104 827 470 |
-| 2028 | 104 827 470 |
-| 2029 | 104 827 470 | 
-| 2030 | 104 827 470 |
-| 2031 | 104 827 470 |
-
-Direct Team Revenues
-
-| Year | Revenue (∂) |
-| :---: | :---: |
-| 2022 | 84 340 456 |
-| 2023 | 100 238 462 |
-| 2024 | 116 267 196 |
-| 2025 | 132 426 656 |
-| 2026 | 148 716 844 |
-| 2027 | 165 137 758 |
-| 2028 | 181 689 400 |
-| 2029 | 198 371 769 |
-| 2030 | 215 184 865 |
-| 2031 | 231 128 688 |
-
 ---
 ## **Economic Impact**
 
@@ -504,7 +466,9 @@ rbind(ecoRarGDP%>%select(Year,Rarita),cbind(Year = c(2021:2030),Rarita = GNIc)) 
 ```
 Given the historical data doesn't account for the existence of the national team, the additional profit calculated above was added to GDP and GNI forecasts to capture the effect of the team on these economic indices. These forecasts can be seen below and highlight the positive impact of the proposed implementation plan on the economy.
 
-PUT GNI AND GDP PICTURES HERE
+![](GDP Forecast.png)
+
+![](GNI Forecast.png)
 
 The above additional profit calculations however do not account for the initial one time sum of 995,000,000 or player salaries. Over the next 10 years, the players are signed to long-term 5 year contracts in which their salaries will increase based on their performance during those years as long-term contracts can improve player productivity (Carmichael, F 2011). As all players are chosen from Rarita, there is no need to borrow players from other countries, resulting in less expenses. The combined yearly salary to fund the players can be found in the table below, and as the total salary across the 10 years is far less than the ∂995,000,000 provided by the government, there is no need for non-government funding.
 
