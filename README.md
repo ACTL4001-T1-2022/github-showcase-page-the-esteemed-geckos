@@ -423,28 +423,34 @@ Direct Team Revenues
 
 For this analysis the chosen team is assumed to satisfy the "competitive" definition over the next 10 years. Forecasts of GDP, GNI and relevant league revenues/expenses have been provided, allowing an assessment of the team's impact on the Raritan economy.
 
-Additional revenue can be found in the above table Direct Team Revenues, and additional expenses are shown below. Expenses are expected to increase in later years as the team becomes more competitive and more money is invested into staff and training facilities.
+Rarita’s competitive team will directly boost revenues through increased matchday, broadcasting and commercial sources such as increased ticket sales and merchandising. This revenue will increase as the team becomes more competitive due to higher support from fans both in Rarita and internationally. Similarly, expenses are also expected to increase in the later years as the team becomes more competitive and more money is invested into staff and training facilities. The table below showcases the forecast of direct revenues and expenses over the next 10 years.
 
-Direct Team Expenses
+| Year | Revenue (∂) | Expenses (∂) |
+| :---: | :---: | :---: |
+| 2022 | 84 340 456 | 71 577 826 |
+| 2023 | 100 238 462 | 77 591 022 |
+| 2024 | 116 267 196 | 83 652 798 |
+| 2025 | 132 426 656 | 89 762 615 |
+| 2026 | 148 716 844 | 95 920 473 |
+| 2027 | 165 137 758 | 102 126 372 |
+| 2028 | 181 689 400 | 108 380 311 |
+| 2029 | 198 371 769 | 114 682 291 |
+| 2030 | 215 184 865 | 121 032 312 |
+| 2031 | 231 128 688 | 127 430 373 |
 
-| Year | Expenses (∂) |
-| :---: | :---: |
-| 2022 | 71 577 826 |
-| 2023 | 77 591 022 |
-| 2024 | 83 652 798 |
-| 2025 | 89 762 615 |
-| 2026 | 95 920 473 |
-| 2027 | 102 126 372 |
-| 2028 | 108 380 311 |
-| 2029 | 114 682 291 |
-| 2030 | 121 032 312 |
-| 2031 | 127 430 373 |
+Rarita's historical football league data was used to forecast revenues and expenses, producing two ETS models with and without the impact of the team. These models can be seen below:
 
-Rarita's historical football league data was used to forecast revenues and expenses, producing two ETS models with and without the team. These models can be seen below:
+```{r}
+# Revenue forecasts
+NNTR <- ets(TR,model = "AAN") %>% forecast(h=11) # revenues without national team
+YNTR <- ets(TR,model = "AAN", alpha = 0.1) %>% forecast(h=11) # revenues with national team
 
-PUT R CODE HERE
+# Expense forecasts
+NNTE <- ets(TE,model = "AAN") %>% forecast(h=11) #expenses w/o national team
+YNTE <- ets(TE,model = "AAN", alpha = 0.75, beta = 0.9) %>% forecast(h=11) #expenses w/ national team
+```
 
-The difference between revenue minus expesnes in these two models represents additional profit resulting from the national team, shown in the table below alongside total profits for each year. This data shows that in the later years of the forecast the additional profit accounts for up to 15% of total football profit, indicating a significant financial benefit as a result of continued international success.
+The difference between revenue minus expenses in these two models represents additional profit resulting from the national team, shown in the table below alongside total profits for each year. This data shows that in the later years of the forecast the additional profit accounts for up to 15% of total football profit, indicating a significant financial benefit as a result of continued international success.
 
 Additional Profit from National Team
 
