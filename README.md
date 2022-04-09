@@ -613,7 +613,26 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 ### Sensitivity Analysis on Key Assumptions
 
+Total salary expenses varies with different contract length assumptions as well as with different performance increase assumptions. In particular, shorter contract durations have the effect of increasing total expenses in comparison to longer contracts. Clearly, increases in performance also are synonymous with increases in salary expenses. The effects of differing assumptions are seen in the table below. 
+
 ![](sensitivity.JPG)
+
+For calculating the total salary expenses for different contract lengths, the performance bonuses that were calculated prior were used and the duration of contracts were varied. The example of calculating the 3 year salary expense with a 2 percent performance bonus multiplier is seen below.
+
+```{r}
+playerSalary3<-playerSalaryData%>%
+  mutate("PB3a"=playerSalaryBonus$PB3a,"PB3b"=playerSalaryBonus$PB3b,"PB3c"=playerSalaryBonus$PB3c,"2023"=2022,"2024"=2022) %>%
+  mutate("2025"=2022(1+PB3a0.02)InfCumulated3a)%>% 
+  mutate("2026"=2025,"2027"=2025) %>% 
+  mutate("2028"=2027(1+PB3b0.02)InfCumulated3b) %>% 
+  mutate("2029"=2028,"2030"=2028)%>% 
+  mutate("2031"=2030(1+PB3c0.02)InfCumulated3c) %>%
+  select(-Born,-PB3a,-PB3b,-PB3c)
+sum(playerSalary3[2:11])
+```
+### Risk Analysis
+
+![](unknown.png)
 
 
 ---
