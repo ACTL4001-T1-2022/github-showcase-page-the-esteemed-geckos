@@ -438,7 +438,7 @@ Rarita’s competitive team will directly boost revenues through increased match
 | 2030 | 215 184 865 | 121 032 312 |
 | 2031 | 231 128 688 | 127 430 373 |
 
-Rarita's historical football league data was used to forecast revenues and expenses, producing two ETS models with and without the impact of the team. These models can be seen below:
+Rarita's historical football league data was used to forecast revenues and expenses, producing two ETS models with and without the impact of the team that are shown below.
 
 ```{r}
 # Revenue forecasts
@@ -451,8 +451,6 @@ YNTE <- ets(TE,model = "AAN", alpha = 0.75, beta = 0.9) %>% forecast(h=11) #expe
 ```
 
 The difference between revenue minus expenses in these two models represents additional profit resulting from the national team, shown in the table below alongside total profits for each year. This data shows that in the later years of the forecast the additional profit accounts for up to 15% of total football profit, indicating a significant financial benefit as a result of continued international success.
-
-Additional Profit from National Team
 
 | Year | Total Profit (∂) | Additional Profit (∂) | % of Total |
 | :---: | :---: | :---: | :---: |
@@ -467,7 +465,42 @@ Additional Profit from National Team
 | 2030 | 641 581 007 | 94 152 553 | 14.68% |
 | 2031 | 669 293 149 | 104 698 314 | 15.64% |
 
-ARIMA models were produced using historical data for both GDP and GNI and forecasts for 2021-2031 were produced. Given the historical data doesn't account for the existence of the national team, the additional profit calculated above was added to GDP and GNI to capture the effect of the team on these economic indices. These forecasts can be seen below and highlight the positive impact of the proposed implementation plan on the economy.
+ARIMA models were produced using historical data for both GDP and GNI and forecasts for 2021-2031 were produced. As the provided GDP and GNI data was per capita the Rarita population was also forecast to enable accurate per capita forecasts of GDP and GNI. The code for these forecasts can be seen below. 
+
+```{r}
+#Population Forecast
+tsPop <- ts(ecoRarPopulation$Rarita, start=2011)
+mPop <- auto.arima(tsPop) 
+mPop %>% forecast(h=11) %>% autoplot()
+fPop <- mPop %>% forecast(h=11)
+
+#GDP Rarita Forecast
+rarGDPTotal <- cbind(Year = ecoRarGDP$Year,as.data.frame(ecoRarGDP*ecoRarPopulation/10^9)[-1])
+tsGDP <- ts(rarGDPTotal$Rarita,start=2011)
+mGDP <- auto.arima(tsGDP) 
+mGDP %>% forecast(h=11) %>% autoplot()
+fGDP <- mGDP %>% forecast(h=11)
+
+#GDP per capita for Rarita
+GDPc <- as.numeric(fGDP$mean*10^9/fPop$mean)
+rbind(ecoRarGDP%>%select(Year, Rarita),cbind(Year = c(2021:2030),Rarita = GDPc)) %>%
+  as_tsibble(index = Year) %>%
+  autoplot(Rarita)
+
+#GNI Rarita Forecast
+rarGNITotal <- cbind(Year = ecoRarGNI$Year,as.data.frame(ecoRarGNI*ecoRarPopulation/10^9)[-1])
+tsGNI <- ts(rarGNITotal$Rarita, start = 2011)
+mGNI <- auto.arima(tsGNI)
+mGNI %>% forecast(h = 11) %>% autoplot()
+fGNI <- mGNI %>% forecast(h = 11)
+
+#GNI per capita for Rarita
+GNIc <- as.numeric(fGNI$mean*10^9/fPop$mean)
+rbind(ecoRarGDP%>%select(Year,Rarita),cbind(Year = c(2021:2030),Rarita = GNIc)) %>%
+  as_tsibble(index = Year) %>%
+  autoplot(Rarita)
+```
+Given the historical data doesn't account for the existence of the national team, the additional profit calculated above was added to GDP and GNI forecasts to capture the effect of the team on these economic indices. These forecasts can be seen below and highlight the positive impact of the proposed implementation plan on the economy.
 
 PUT GNI AND GDP PICTURES HERE
 
