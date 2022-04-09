@@ -16,6 +16,8 @@ create positive economic opportunities. A team is defined as competitive by Comm
  1. Rank within the top 10 members of the FSA for the season within the next 5 years with,
  2. High probability of achieving an FSA championship within the next 10 years. 
 
+Our Rarita team consisted of 15 players who are forecasted to perform extremely well on an international level within the next 10 years. The team will bring great economic growth to the country and the affects, risks and selection of the team is explored further in this study.
+
 ---
 
 ## **Libraries, Data Cleaning and Data Limitations**
@@ -504,7 +506,22 @@ Given the historical data doesn't account for the existence of the national team
 
 PUT GNI AND GDP PICTURES HERE
 
-The above additional profit calculations don't account for the initial one time sum of 995,000,000 or player salaries. To account for these factors, each year player salaries were subtracted from additional profit and the net result was taken from the remaining funding available. This remaining funding was then invested at the forecasted 1 year spot rate for the given year to determine the remaining funding in the following year. The Remaining Funding below showcases these results and highlights in the increase in remaining funds seen in 2031, a positive indicator for subsequent years.
+The above additional profit calculations however do not account for the initial one time sum of 995,000,000 or player salaries. Over the next 10 years, the players are signed to long-term 5 year contracts in which their salaries will increase based on their performance during those years as long-term contracts can improve player productivity (Carmichael, F 2011). As all players are chosen from Rarita, there is no need to borrow players from other countries, resulting in less expenses. The combined yearly salary to fund the players can be found in the table below, and as the total salary across the 10 years is far less than the ∂995,000,000 provided by the government, there is no need for non-government funding.
+
+| Year | Salary (∂) |
+| :---: | :---: |
+| 2022 | 92 340 000 |
+| 2023 | 92 340 000 |
+| 2024 | 92 340 000 |
+| 2025 | 92 340 000 |
+| 2026 | 92 340 000 |
+| 2027 | 104 827 470 |
+| 2028 | 104 827 470 |
+| 2029 | 104 827 470 | 
+| 2030 | 104 827 470 |
+| 2031 | 104 827 470 |
+
+To account for the initial sum and player salaries, each year player salaries were subtracted from additional profit and the net result was taken from the remaining funding available. This remaining funding was then invested at the forecasted 1 year spot rate for the given year to determine the remaining funding in the following year. The Remaining Funding below showcases these results and highlights in the increase in remaining funds seen in 2031, a positive indicator for subsequent years.
 
 Remaining Funding
 
