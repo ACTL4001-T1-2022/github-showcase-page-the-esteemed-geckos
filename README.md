@@ -1,8 +1,4 @@
 
-<p align="center">
- <img src="Esteemed_Gecko_logo.gif">
- <img width=500 src="esteemedgecko.gif">
-</p>
 
 By: Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 
