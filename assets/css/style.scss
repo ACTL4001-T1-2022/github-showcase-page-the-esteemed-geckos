@@ -2,14 +2,6 @@
 ---
 
 @import 'jekyll-theme-cayman';
-
-.video_banner {
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-position: center;
-    object-fit:cover
-  }
   
 .btn{
     background-color: #159957;
@@ -18,6 +10,7 @@
 }
 
 .page-header{
-  background-color: #ffffff;
-  background-image: none;
+    color:#ffff;
+    background-color:#A067AB;
+    background-image:linear-gradient(120deg, #5073B8, #A067AB);
 }
