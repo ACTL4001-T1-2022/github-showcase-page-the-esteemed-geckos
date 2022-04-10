@@ -1,4 +1,4 @@
-
+# **SOA Case Study: Rarita Football Team Showcase**
 
 By: Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 
