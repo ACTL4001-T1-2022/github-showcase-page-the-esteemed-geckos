@@ -1,5 +1,3 @@
-![](teammovement.png)
-
 
 <p align="center">
  <img src="Esteemed_Gecko_logo.gif">
