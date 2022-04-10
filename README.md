@@ -1,4 +1,4 @@
-# **SOA Case Study: Rarita Football Team Showcase**
+# **SOA Case Study: Rarita Football Team ⚽**
 
 By: Aaron Vu, Aimon Mostofi, James Ngo, Liam La and Nathan Truong
 
@@ -650,7 +650,7 @@ Francis Online 2021
 
 ---
 
-## ⚽**Thank you!!**:soccer:
+## ⚽**Thank you!!**⚽
 
 <p align="center">
  <img width=145 src="dribble.gif">
