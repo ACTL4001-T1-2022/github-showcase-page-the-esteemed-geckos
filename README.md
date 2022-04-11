@@ -608,8 +608,6 @@ After the second phase, there will be a five-year re-evaluation to adapt the pla
 
 Total salary expenses varies with different contract length assumptions as well as with different performance increase assumptions. In particular, shorter contract durations have the effect of increasing total expenses in comparison to longer contracts. Clearly, increases in performance also are synonymous with increases in salary expenses. The effects of differing assumptions are seen in the table below. 
 
-![](sensitivity.JPG)
-
 ![](SensitvityAnalysis.JPG)
 
 For calculating the total salary expenses for different contract lengths, the performance bonuses that were calculated prior were used and the duration of contracts were varied. The example of calculating the 3 year salary expense with a 2 percent performance bonus multiplier is seen below.
@@ -626,8 +624,6 @@ playerSalary3<-playerSalaryData%>%
 sum(playerSalary3[2:11])
 ```
 ### Risk Analysis
-
-![](Capture.JPG)
 
 ![](RiskAnalysis.JPG)
 
