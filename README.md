@@ -610,7 +610,7 @@ Total salary expenses varies with different contract length assumptions as well 
 
 ![](sensitivity.JPG)
 
-|  | Contract Duration (Years) |
+|  | Contract Duration (Years) | | | | |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Salary Increase |  | 3 | 4 | 5 | 6 |
 |  | 1% | 1 006 604 253 | 998 303 671 | 981 411 605 | 978 910 847 |
