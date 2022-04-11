@@ -610,6 +610,15 @@ Total salary expenses varies with different contract length assumptions as well 
 
 ![](sensitivity.JPG)
 
+|  | Contract Duration (Years) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Salary Increase |  | 3 | 4 | 5 | 6 |
+|  | 1% | 1 006 604 253 | 998 303 671 | 981 411 605 | 978 910 847 |
+|  | 1.5% | 1 009 276 560 | 1 001 144 494 | 983 624 478 | 980 719 898 |
+|  | 2% | 1 011 956 220 | 1 003 985 954 | 985 837 350 | 982 528 949 |
+|  | 2.5% | 1 014 643 232 | 1 006 828 051 | 988 050 222 | 984 338 000 |
+|  | 3% | 1 017 337 596 | 1 009 670 785 | 990 263 094 | 986 147 051 |
+
 For calculating the total salary expenses for different contract lengths, the performance bonuses that were calculated prior were used and the duration of contracts were varied. The example of calculating the 3 year salary expense with a 2 percent performance bonus multiplier is seen below.
 
 ```{r}
