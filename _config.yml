@@ -1,1 +1,5 @@
 theme: jekyll-theme-cayman
+title: Rarita Football Team Showcase
+description: March 2022
+plugins:
+  - jemoji
